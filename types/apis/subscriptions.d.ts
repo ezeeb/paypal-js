@@ -69,6 +69,10 @@ export type BillingInfo = {
     outstanding_balance: Amount;
 };
 
+export type ShippingAddress= {
+    address: Address;
+}
+
 export type Subscriber = {
     email_address: string;
     name: {
@@ -76,7 +80,7 @@ export type Subscriber = {
         surname: string;
     };
     payer_id: string;
-    shipping_address: Address;
+    shipping_address: ShippingAddress;
 };
 
 export type SubscribeResponseBody = {
